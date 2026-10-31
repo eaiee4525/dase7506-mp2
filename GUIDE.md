@@ -6,7 +6,7 @@ Individual coursework · **10% of the course grade**
 
 **Deadline: 31 October 2026, 23:59 (Beijing time, UTC+8).**
 
-[Submit a result](https://xudongwu-0.github.io/courses/dase7506/mp2/) · [Download the complete repository](https://github.com/xudongwu-0/DASE7506-MP2) · [Installation and running instructions](../code/README.md)
+[Submit a result](https://xudongwu-0.github.io/courses/dase7506/mp2/) · [Download the complete repository](https://github.com/xudongwu-0/DASE7506-MP2) · [Installation and running instructions](code/README.md)
 
 A language model produces four solutions to the same maths problem. They can all sound convincing, show several calculations, and still disagree on the answer. Your task is to build a program that reads them and chooses one.
 
@@ -53,7 +53,7 @@ The supplied `submission.py` defines the function signature only and raises `Not
 ## 1. What we provide
 
 - **`guide/`:** this assignment guide, including the task, research questions, assessment and submission rules.
-- **`code/`:** the complete data, fixed representations, an empty prediction interface and independent evaluation tools. The [code README](../code/README.md) explains the files, input/output formats, installation and commands.
+- **`code/`:** the complete data, fixed representations, an empty prediction interface and independent evaluation tools. The [code README](code/README.md) explains the files, input/output formats, installation and commands.
 - **Data:** **4,755 training, 798 validation and 467 test questions**, with four candidate solutions per question. The splits do not overlap. Every group has at least one correct final answer; test groups contain at least two different valid parsed answers. Training and validation also include easier groups.
 - **Inputs:** each question, its four candidate texts and fixed numerical representations of shape **[N, 4, 1024]**. Reference answers are provided separately: training supervision, validation development and test scoring/reproduction only.
 - **Access:** clone the repository or use GitHub's **Code → Download ZIP**. All supplied data is included. No API key or model download is needed. Run the data checker before developing your method.
